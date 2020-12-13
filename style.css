@@ -42,3 +42,29 @@ p {
 .right {
     text-align: right;
 }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.bar-container {
+    background-color: #f1f1f1;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.bar__5 {width: 60%; height: 18px; background-color: #4CAF50;}
+.bar__4 {width: 20%; height: 18px; background-color: #2196F3;}
+.bar__3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar__2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar__1 {width: 15%; height: 18px; background-color: #f44336;}
+
+@media (max-width: 600px) {
+    .side, .middle {
+      width: 100%;
+    }
+    .right {
+      display: none;
+    }
+  }
